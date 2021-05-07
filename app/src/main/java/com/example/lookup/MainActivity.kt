@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
-    private val bruh : String = "bruh"
+    private val cuk : String = "bruh"
     private val test: Int = 1
     //sdsdsdd
     override fun onCreate(savedInstanceState: Bundle?) {
