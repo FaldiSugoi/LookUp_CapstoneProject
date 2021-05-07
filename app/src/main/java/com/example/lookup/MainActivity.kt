@@ -5,7 +5,7 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
     private val cuki : String = "bruh"
-    private val test: Int = 1
+    private val test: Int = 13
     //sdsdsdd
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
