@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">LookUp</string>
     <string name="faldi">Faldi</string>
+    <string name="Status">Morning</string>
+    <string name="greet_txt">Good</string>
+    <string name="ready_to_review">Ready to review?</string>
+    <string name="title_vid">Title</string>
 </resources>
