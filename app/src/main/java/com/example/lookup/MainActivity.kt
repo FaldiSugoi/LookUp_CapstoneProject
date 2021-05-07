@@ -5,6 +5,7 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
     private val bruh : String = "bruh"
+    private val test: Int = 1
     //sdsdsdd
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
