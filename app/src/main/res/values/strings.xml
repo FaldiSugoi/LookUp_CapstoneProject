@@ -15,4 +15,13 @@
     <string name="let_s_start">Let\'s start</string>
     <string name="start">START</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tips">Dengan pengamatanmu apakah kamu pikir xxxxx xxxxxx? Silahkan pilih mernurut kamu?</string>
+    <string name="legit">Legit</string>
+    <string name="deepfake_tbn">DeepFake</string>
+    <string name="hurray">Hurray !!</string>
+    <string name="correct1">you guessed it correctly</string>
+    <string name="correct2">This is one of Deep fake videos</string>
+    <string name="sorry">Sorry</string>
+    <string name="incorrect1">but your guess is wrong</string>
+    <string name="real">This is real video</string>
 </resources>

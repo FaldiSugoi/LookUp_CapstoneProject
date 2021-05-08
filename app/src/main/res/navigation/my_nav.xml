@@ -37,4 +37,14 @@
         android:name="com.example.lookup.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.example.lookup.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" />
+    <fragment
+        android:id="@+id/correctDialogFragment"
+        android:name="com.example.lookup.fragment.CorrectDialogFragment"
+        android:label="fragment_correct_dialog"
+        tools:layout="@layout/fragment_correct_dialog" />
 </navigation>

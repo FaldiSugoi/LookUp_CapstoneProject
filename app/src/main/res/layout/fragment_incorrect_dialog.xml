@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.IncorrectDialogFragment"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="45dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sorry"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/incorrect1"
+                android:textSize="15sp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/real"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="67dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_circle"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/incorrectIcon"
+            android:layout_width="80dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/ic_incorrect" />
+    </FrameLayout>
+</FrameLayout>
