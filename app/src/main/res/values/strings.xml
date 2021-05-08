@@ -5,4 +5,14 @@
     <string name="greet_txt">Good</string>
     <string name="ready_to_review">Ready to review?</string>
     <string name="title_vid">Title</string>
+    <string name="description">What is LookUp? LookUp is application that can detect whether the video is deepfake or not</string>
+    <string name="description2">Deep fake is a video which their face or body is edited, it can be very dangerous because can spread misinformation</string>
+    <string name="description3">Decide the video is deepfake or not and compare with our machine</string>
+    <string name="title">TextView</string>
+    <string name="next">Next</string>
+    <string name="deepfake">DeepFake?</string>
+    <string name="your_task">Your Task</string>
+    <string name="let_s_start">Let\'s start</string>
+    <string name="start">START</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
