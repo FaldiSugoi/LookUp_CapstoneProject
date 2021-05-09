@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
         android:layout_marginTop="45dp"
-        android:background="@color/white">
+        android:background="@drawable/dialog_layout">
 
         <LinearLayout
             android:layout_width="300dp"
@@ -26,7 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/sorry"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:fontFamily="@font/fredoka_one"/>
 
             <TextView
                 android:layout_width="wrap_content"

@@ -22,8 +22,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:background="@color/blue_200"
-            android:padding="5dp">
+            android:background="@drawable/card_layout"
+            android:padding="5dp"
+            >
 
             <VideoView
                 android:id="@+id/video"

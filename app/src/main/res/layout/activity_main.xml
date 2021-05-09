@@ -17,7 +17,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/fredoka_one"/>
 
     <TextView
         android:id="@+id/status"
@@ -29,7 +30,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/fredoka_one"/>
 
     <TextView
         android:id="@+id/q_review"
@@ -41,7 +43,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/fredoka_one"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_video"
@@ -49,7 +52,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/q_review"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/list_item_video"/>
 
     <Button
         android:id="@+id/testButton"
