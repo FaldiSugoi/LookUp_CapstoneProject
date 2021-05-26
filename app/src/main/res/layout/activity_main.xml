@@ -4,63 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".main.MainActivity"
+    android:padding="16dp"
     android:id="@+id/frame_container">
 
-    <TextView
-        android:id="@+id/greet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/greet_txt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
+
+    <ImageButton
+        android:id="@+id/uploadVideos"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:fontFamily="@font/fredoka_one"/>
-
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Status"
-        app:layout_constraintStart_toEndOf="@id/greet"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:fontFamily="@font/fredoka_one"/>
-
-    <TextView
-        android:id="@+id/q_review"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ready_to_review"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_video_library_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/greet"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="contentDescription" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Good Morning"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_wb_sunny_24" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:fontFamily="@font/fredoka_one"/>
+        android:fontFamily="@font/fredoka_one"
+        android:text="Try check your videos?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Predicted Videos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadVideos"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_video"
+        android:id="@+id/rvVideo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/q_review"
+        android:layout_height="320dp"
         android:layout_marginTop="16dp"
-        tools:listitem="@layout/list_item_video"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        tools:listitem="@layout/list_item_video" />
 
-    <Button
-        android:id="@+id/testButton"
+    <ProgressBar
+        android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rv_video" />
+        app:layout_constraintTop_toTopOf="@id/textView4"
+        android:visibility="visible"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

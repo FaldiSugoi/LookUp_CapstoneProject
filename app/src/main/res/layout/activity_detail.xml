@@ -18,22 +18,24 @@
         android:id="@+id/title_video"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="173dp"
+        android:fontFamily="@font/fredoka_one"
         android:text="@string/title_vid"
         android:textSize="30sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/video"
-        android:layout_marginStart="16dp"
-        android:fontFamily="@font/fredoka_one"/>
+        app:layout_constraintTop_toBottomOf="@+id/video" />
 
     <TextView
-        android:id="@+id/tips"
+        android:id="@+id/time"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:padding="16dp"
-        android:text="@string/tips"
+        android:text="@string/dd_mm_yyy"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -42,30 +44,59 @@
         android:maxLines="3"
         android:fontFamily="@font/fredoka_one"/>
 
-    <Button
-        android:id="@+id/button1"
-        android:background="@drawable/button_selector"
-        android:layout_width="110dp"
+    <TextView
+        android:id="@+id/stauts_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:text="@string/deepfake_tbn"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="@string/status_title"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tips"
-        app:layout_constraintVertical_bias="0.503" />
+        app:layout_constraintTop_toBottomOf="@+id/time"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="110dp"
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_selector"
-        android:gravity="center"
-        android:text="@string/legit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="60dp"
-        app:layout_constraintStart_toEndOf="@+id/button1"
-        app:layout_constraintTop_toBottomOf="@+id/tips"
-        app:layout_constraintVertical_bias="0.503" />
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="@string/on_review"
+        android:textSize="20sp"
+        android:textColor="@color/teal_200"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintStart_toEndOf="@id/stauts_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/time"/>
+
+    <TextView
+        android:id="@+id/title_deepfake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/is_it_deepfake"
+        android:textSize="20sp"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status"/>
+
+    <TextView
+        android:id="@+id/deepfake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:text="@string/unknown"
+        android:textColor="@color/teal_200"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_deepfake"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

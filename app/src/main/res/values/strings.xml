@@ -15,7 +15,6 @@
     <string name="let_s_start">Let\'s start</string>
     <string name="start">START</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tips">Dengan pengamatanmu apakah kamu pikir xxxxx xxxxxx? Silahkan pilih mernurut kamu?</string>
     <string name="legit">Legit</string>
     <string name="deepfake_tbn">DeepFake</string>
     <string name="hurray">Hurray !!</string>
@@ -24,4 +23,10 @@
     <string name="sorry">Sorry</string>
     <string name="incorrect1">but your guess is wrong</string>
     <string name="real">This is real video</string>
+    <string name="on_review">On Review</string>
+    <string name="input_your_title">Input Your Title</string>
+    <string name="dd_mm_yyy">/dd/MM/yyy</string>
+    <string name="status_title">Status : </string>
+    <string name="is_it_deepfake">Is it Deepfake?</string>
+    <string name="unknown">Unknown</string>
 </resources>
