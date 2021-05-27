@@ -9,27 +9,27 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MainViewModel: ViewModel() {
     var videoList = MutableLiveData<List<VideoEntity>>()
 
     fun loadVideo(){
         val list = ArrayList<VideoEntity>()
-        val ref = FirebaseDatabase.getInstance("https://analog-subset-312906-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Videos")
-        ref.addValueEventListener(object : ValueEventListener{
-            override fun onDataChange(snapshot: DataSnapshot) {
+        val ref = FirebaseFirestore.getInstance()
+        ref.collection("Videos")
+            .addSnapshotListener { value, error ->
                 list.clear()
-                for (ds in snapshot.children){
-                    val video = ds.getValue(VideoEntity::class.java)
-                    list.add(video!!)
+                if (error != null){
+                    return@addSnapshotListener
+                }
+                for (ds in value!!){
+                    val video = ds.toObject(VideoEntity::class.java)
+                    list.add(video)
                 }
                 videoList.postValue(list)
             }
 
-            override fun onCancelled(error: DatabaseError) {
-
-            }
-        })
     }
 
     fun getList(): LiveData<List<VideoEntity>>{

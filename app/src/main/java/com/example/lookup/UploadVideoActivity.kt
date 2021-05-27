@@ -9,6 +9,7 @@ import android.widget.MediaController
 import android.widget.Toast
 import com.example.lookup.databinding.ActivityUploadVideoBinding
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import java.util.*
 import kotlin.collections.HashMap
@@ -125,9 +126,9 @@ class UploadVideoActivity : AppCompatActivity() {
                     hashmap["deepfake"] = deepfake
                     hashmap["videoUrl"] = "$downloadUri"
 
-                    val dbReference = FirebaseDatabase.getInstance("https://analog-subset-312906-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Videos")
-                    dbReference.child(title.replace("\\s".toRegex(),"").toLowerCase(Locale.ROOT) + "_$timestamp")
-                        .setValue(hashmap)
+                    val dbReference = FirebaseFirestore.getInstance()
+                    dbReference.collection("Videos").document(title.replace("\\s".toRegex(),"").toLowerCase(Locale.ROOT) + "_$timestamp")
+                            .set(hashmap)
                         .addOnSuccessListener {
                             progressDialog.dismiss()
                             Toast.makeText(this, "Video Uploaded", Toast.LENGTH_SHORT).show()
