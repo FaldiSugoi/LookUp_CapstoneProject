@@ -1,10 +1,10 @@
 package com.example.lookup.onboarding
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.lookup.R
 import com.example.lookup.onboarding.screen.FirstScreen
 import com.example.lookup.onboarding.screen.SecondScreen

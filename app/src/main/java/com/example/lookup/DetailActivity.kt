@@ -1,13 +1,9 @@
 package com.example.lookup
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.MediaController
+import androidx.appcompat.app.AppCompatActivity
 import com.example.lookup.databinding.ActivityDetailBinding
-import com.example.lookup.databinding.ActivityUploadVideoBinding
-import com.example.lookup.fragment.CorrectDialogFragment
-import com.example.lookup.fragment.IncorrectDialogFragment
-import kotlinx.android.synthetic.main.activity_detail.*
 import java.util.*
 
 class DetailActivity : AppCompatActivity() {
