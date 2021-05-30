@@ -26,7 +26,7 @@
         android:layout_marginStart="59dp"
         android:layout_marginTop="80dp"
         android:fontFamily="@font/fredoka_one"
-        android:text="@string/title"
+        android:text="@string/getting_started"
         android:textColor="#FBF6F0"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"

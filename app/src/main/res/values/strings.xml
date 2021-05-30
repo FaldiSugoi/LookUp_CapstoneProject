@@ -7,7 +7,7 @@
     <string name="title_vid">Title</string>
     <string name="description">What is LookUp? LookUp is application that can detect whether the video is deepfake or not</string>
     <string name="description2">Deep fake is a video which their face or body is edited, it can be very dangerous because can spread misinformation</string>
-    <string name="description3">Decide the video is deepfake or not and compare with our machine</string>
+    <string name="description3">Upload a video and let our deepfake machine decide deepfake or not</string>
     <string name="title">TextView</string>
     <string name="next">Next</string>
     <string name="deepfake">DeepFake?</string>
@@ -29,4 +29,5 @@
     <string name="status_title">Status : </string>
     <string name="is_it_deepfake">Is it Deepfake?</string>
     <string name="unknown">Unknown</string>
+    <string name="getting_started">Getting Started</string>
 </resources>
