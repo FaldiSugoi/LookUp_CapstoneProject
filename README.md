@@ -34,6 +34,20 @@ Project Resources :
 ● Firebase
 
 ---
+# How to clone the project
+
+1. Above the list click this button : 
+
+![image](https://user-images.githubusercontent.com/61868927/120668312-8cc9e400-c4b8-11eb-8364-e4b26516ac70.png)
+
+2. Choose "Open with GitHub desktop"
+3. Install GitHub Desktop
+4. Sign in on GitHub desktop using youre git account 
+5. Click Fetch origin on GitHub desktop
+6. Congratulation now the project is available on youre directory
+
+
+---
 # The Process of creating the project
 
 Mobile developer :
