@@ -22,16 +22,15 @@ content (videos) is deep fake or not.
 
 Project Resources :
 
-● Google Collab
+● Jupyter Notebook
 ● Kaggle
 ● Google Cloud Platform
 ● Tensorflow
-● Pandas
-● Altair
 ● Keras
 ● Android Studio
 ● Figma
 ● Firebase
+● Flask
 
 ---
 # How to clone the project
